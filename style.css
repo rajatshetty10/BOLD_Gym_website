@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500;700;800&Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;800&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Segoe UI', sans-serif;
+	line-height: 1.8;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+/* Homepage */
+.homepage{
+	height: 100vh;
+	background: linear-gradient(rgb(0,0,0,0.9), rgb(0,0,0,0.5)), url('./img/gym-poster-1.jpg') no-repeat center center/cover;
+}
+
+#navbar{
+	display: flex;
+	color: #f4f4f4;
+	padding: 2rem;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 1px 2px 2px #eee;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+}
+
+#navbar i{
+	font-size: 50px;
+	display: block;
+	margin-right: 20px;
+}
+
+#navbar ul{
+	list-style: none;
+	display: flex;
+	font-family: 'MuseoModerno', sans-serif;
+}
+
+#navbar ul li a{
+	color: #f4f4f4;
+	margin: 10px;
+	font-size: 1.2rem;
+	padding: 10px 15px;
+	border-radius: 10px;
+	transition: all 0.5s;
+}
+
+#navbar ul li a:hover{
+	background: #F1F403;
+	color: #333;
+}
+
+#navbar .login-btn{
+	background: #F1F403;
+	color: #333;
+}
+
+#navbar .login-btn:hover{
+	background: #F4F4F4;
+}
+
+/* Utilies */
+.text-primary{
+	color: #F1F403;
+}
+
+.contact-icon-color:hover{
+	color: #fff;
+}
+
+/* Homepage: Showcase */
+.showcase{
+	height: 80vh;
+	color: #f4f4f4;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.showcase .showcase-content i{
+	color: #F1F403;
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+
+.showcase .showcase-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.showcase .showcase-content h1{
+	margin-left: 1rem;
+	font-size: 2rem;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/* Login Page */
+.login {
+	height: 100vh;
+	background: linear-gradient(rgb(0,0,0,0.9), rgb(0,0,0,0.5)), url('./img/gym-poster-2.jpg') no-repeat center center/cover;
+}
+
+.container{
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.container .box{
+	background: #fff;
+	width: 70vw;
+	height: 70vh;
+	display: flex;
+}
+
+/* Login Page Container: Left Side */
+.container .box .left{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .box .left .google-btn{
+	border: solid #333;
+	text-align: center;
+	padding: 0 20px;
+}
+
+.container .box .left .google-btn:hover{
+	background: #252F44;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.container .box .left .google-btn:visited{
+	color: black;
+}
+
+.container .box .left .google-btn:hover{
+	color: #fff;
+}
+
+.form-group label{
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 0.5rem;
+}
+
+.container .box .left p{
+	margin: 10px;
+}
+
+.container .box .left .forgot-password{
+	display: flex;
+	font-size: 0.8rem;
+	justify-content: space-between;
+	padding: 0.5rem;
+}
+
+input[type="email"], input[type="password"]{
+	width: 18rem;
+	height: 2rem;
+	border: solid #f4f4f4 ;
+	padding: 1rem;
+	margin-left: 0.5rem;
+}
+
+.terms{
+	padding-top: 2rem;
+	text-align: center;
+}
+
+input[type="submit"]{
+	width: 18rem;
+	padding: 0.5rem;
+	border-radius: 3px;
+	border-style: #252f44 solid;
+	background: #252F44;
+	margin-left: 2rem;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+input[type="submit"]:hover{
+	background: white;
+	color: black;
+	border: #BLACK solid;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+form p{
+	font-size: 0.8rem;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+/* Login Page Container: Right Side */
+.container .box .right{
+	border: solid #f4f4f4;
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .box .right .right-section{
+	display: flex;
+}
+
+.container .box .right .right-section i{
+	color: rgb(0,0,255);
+	margin: 0 10px 40px 0;
+	padding: 10px;
+}
+
+.container .box .right .right-section p{
+	margin-bottom: 2rem;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+/* About Page */
+.about{
+	height: 100vh;
+	background: linear-gradient(rgb(0,0,0,0.9), rgb(0,0,0,0.5)), url('./img/locker-room.jpg') no-repeat center center/cover;
+}
+
+.whole{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding: 3rem;
+}
+
+.whole-content{
+	color: #fff;
+	display: flex;
+	border: inset;
+	background: linear-gradient(#33333355, #33333388);
+}
+
+/* About Page: Left Section*/
+.whole-content .left-about{
+	flex: 1;
+	padding: 2rem;
+}
+
+.whole-content .left-about #para{
+	padding: 1rem;
+}
+
+.whole-content .right-about{
+	flex: 2;
+	padding: 2rem;
+}
+
+.whole-content .left-about h3, .right-about h3{
+	border-bottom: solid;
+}
+
+.whole-content .right-about .team{
+	display: flex;
+	padding: 0 2rem 1.5rem 0;
+}
+
+.whole-content .right-about .team img{
+	width: 7rem;
+}
+
+.whole-content .right-about .team .puttu, .takku, .annu{
+	text-align: center;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+/* Contact Page*/
+.contact {
+	height: 100vh;
+	background: linear-gradient(rgb(0,0,0,0.9), rgb(0,0,0,0.5)), url('./img/contact-poster.jpg') no-repeat center center/cover;
+}
+
+.contact-main{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 0 auto;
+	height: 90%;
+	width: 80%;
+}
+
+.contact-main .icon{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-main .icon .fas,
+.contact-main .icon .fab{
+	font-size: 3rem;
+	padding: 1.5rem;
+	background: #fff;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.contact-main .icon p{
+	color: #fff;
+	font-size: 1rem;
+	margin-top: 1rem;
+}
+
+.contact-main .fa-phone-alt:hover{
+	background: green;
+}
+
+.contact-main .fa-envelope:hover{
+	background: red;
+}
+
+.contact-main .fa-whatsapp:hover{
+	background: green;
+}
+
+.contact-main .fa-instagram:hover{
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.contact-main .fa-facebook:hover{
+	background: #3b5998;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+/* SignUp Page */
+.signup{
+	height: 100vh;
+	background: linear-gradient(rgb(0,0,0,0.9), rgb(0,0,0,0.5)), url('./gym-poster-2.jpg') no-repeat center center/cover;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/* Footer*/
+ footer{
+ 	background: black;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
